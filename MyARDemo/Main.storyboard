@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NXE-Fy-JCm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Sx5-aV-3eB">
+            <objects>
+                <viewController id="NXE-Fy-JCm" customClass="ViewController" customModule="MyARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C9n-pU-he9"/>
+                        <viewControllerLayoutGuide type="bottom" id="xza-Se-h1H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ohC-hi-Vte">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-jJ-bOd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sQ-Ac-H24">
+                                <rect key="frame" x="137" y="601" width="100" height="46"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Draw Line"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QMc-jJ-bOd" firstAttribute="leading" secondItem="ohC-hi-Vte" secondAttribute="leading" id="A7f-jV-UVf"/>
+                            <constraint firstItem="xza-Se-h1H" firstAttribute="top" secondItem="QMc-jJ-bOd" secondAttribute="bottom" id="Oq3-Y0-9Jz"/>
+                            <constraint firstItem="2sQ-Ac-H24" firstAttribute="top" secondItem="QMc-jJ-bOd" secondAttribute="bottom" constant="-66" id="VjG-DA-4nY"/>
+                            <constraint firstAttribute="trailing" secondItem="QMc-jJ-bOd" secondAttribute="trailing" id="dog-yR-YNg"/>
+                            <constraint firstItem="QMc-jJ-bOd" firstAttribute="top" secondItem="ohC-hi-Vte" secondAttribute="top" id="gcY-I2-RGl"/>
+                            <constraint firstItem="2sQ-Ac-H24" firstAttribute="centerX" secondItem="QMc-jJ-bOd" secondAttribute="centerX" id="u9Y-AM-0ac"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawLineButton" destination="2sQ-Ac-H24" id="OUP-Hm-UtF"/>
+                        <outlet property="sceneView" destination="QMc-jJ-bOd" id="ckq-GY-MMX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Z1-nJ-sbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.60000000000002" y="-311.69415292353824"/>
+        </scene>
+    </scenes>
+</document>
